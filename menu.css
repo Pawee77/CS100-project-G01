@@ -1,0 +1,27 @@
+.bar{
+    background-color: #2B3D41;
+    padding:20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 35px;
+    font-family: 'Covered By Your Grace', cursive;
+    color: #ffffff;
+}
+
+.menu{
+    margin-top:20px;
+    font-size:30px;
+}
+
+.menu a{
+    margin-left:50px;
+    text-decoration: none;
+    color:#ffffff;
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+
+

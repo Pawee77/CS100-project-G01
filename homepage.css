@@ -1,0 +1,339 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    background-color: #83A0A0;
+}
+
+/*หัวข้อ homepage */
+
+.topic{
+    margin: auto ;
+    width: 10%;
+    font-size:30px;
+    padding:30px 0;
+    color:black;
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+/*ข้อมูล */
+
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.p1 img{
+    border: 5px solid #2B3D41;
+    border-radius: 90px 20px 20px 30px;
+}
+
+.infop1{
+    margin:20px auto;
+    padding:20px 60px;
+    background-color: #4C5F6B;
+    border: 5px solid #2B3D41;
+    border-radius: 30px 20px 20px 80px;
+
+}
+
+.infop1 span{
+    color: white; 
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.p2 img{
+    border: 5px solid #2B3D41;
+    border-radius: 20px 90px 30px 20px;
+}
+
+.infop2{
+    margin:20px auto;
+    padding:20px 60px;
+    background-color: #4C5F6B;
+    border: 5px solid #2B3D41;
+    border-radius: 20px 30px 80px 20px;
+
+}
+
+.infop2 span{
+    color: white; 
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+/*ช่องติดต่อ*/
+
+.contactp1 ul{
+    background-color:#4C5F6B ;
+    border-radius: 150px 20px 90px 20px;
+    padding:30px;
+    border: 5px solid #2B3D41;
+    
+}
+
+.contactp2 ul{
+    background-color:#4C5F6B ;
+    border-radius: 20px 150px 20px 90px;
+    padding:30px;
+    border: 5px solid #2B3D41;
+}
+
+.contactp1 ul p{
+    font-size:25px;
+    color:white;
+    margin-bottom:30px;
+    margin-left:50px;
+}
+
+.contactp2 ul p{
+    font-size:25px;
+    color:white;
+    margin-bottom:30px;
+}
+
+
+
+.contactp1 li{
+    font-size:20px;
+    margin:20px 0px;
+    color:rgb(255, 255, 255);
+    margin-left:20px;
+    list-style: none;
+    transition: .3s ease-in-out;
+    
+}
+
+.contactp1 a{
+    text-decoration: none;
+}
+.contactp2 a{
+    text-decoration: none;
+}
+
+.contactp1 li:hover{
+    color:rgb(0, 0, 0);
+}
+
+.contactp2 li{
+    font-size:20px;
+    margin:20px 0px;
+    color:rgb(255, 255, 255);
+    margin-left:20px;
+    list-style: none;
+    transition: .3s ease-in-out;
+}
+
+.contactp2 li:hover{
+    color:rgb(0, 0, 0);
+}
+
+/*popup*/
+
+.popup a{
+    text-decoration: none;
+}
+
+.popup li{
+    list-style: none;
+    color: #ffffff;
+}
+
+.popup ul{
+    color: #ffffff;
+}
+
+.clickcontact{
+    display: none;
+}
+
+.popup{
+    width:400px;
+    background-color:#4C5F6B;
+    border-radius: 400px 10px;
+    position: absolute;
+    top:0%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 70px 100px 70px;
+    visibility: hidden;
+    transition: transform 0.4s;
+    border: 5px solid #2B3D41;
+}
+
+.popup li:hover{
+    color:#2B3D41
+}
+
+.popup p{
+    margin-bottom: 15px;
+}
+.open-popup{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup ul{
+    font-size: 30px;
+}
+
+.popup li{
+    margin:5px auto;
+    font-size: 20px;
+    transition: .3s ease-in-out;
+}
+
+.popup button{
+    padding:10px 0;
+    margin-top:50px;
+    width:70%;
+    border:0;
+    outline:none;
+    font-size:18px;
+    border-radius:  4px;
+    background-color: #2B3D41;
+    color:#ffffff;
+    cursor: pointer;
+}
+
+.clickforcontact{
+   width: 50%;
+   margin:auto;
+}
+.clickcontact{
+    cursor: pointer;
+    color:white;
+    background-color: #2B3D41;
+    border: 0px;
+    padding:20px 70px;
+    font-size:25px;
+    margin:0px;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+.clickcontact:hover{
+    background-color: #4C5F6B;
+}
+
+.clickcontact1{
+    cursor: pointer;
+    color:white;
+    background-color: #2B3D41;
+    border: 0px;
+    padding:20px 70px;
+    font-size:25px;
+    margin:0px;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+.clickcontact1:hover{
+    background-color: #4C5F6B;
+}
+
+.infop1 button{
+    display: none;
+}
+
+.infop2 button{
+    display: none;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 1527px){
+
+    .contactp1 ul p{
+        font-size:20px;
+        margin-bottom:25px;
+        margin-left:30px;
+    }
+    
+    .contactp2 ul p{
+        font-size:20px;
+        margin-bottom:25px;
+    }
+    
+    .contactp1 li{
+        font-size:15px;
+        margin-left:15px;
+        margin:15px 0px;
+    }
+
+    .contactp2 li{
+        font-size:15px;
+        margin-left:15px;
+        margin:15px 0px;
+    }
+}
+
+@media screen and (max-width:1314px){
+
+    .contactp1{
+        display:none;
+    }
+    .contactp2{
+        display:none;
+    }
+    .clickcontact{
+        display: block;
+    }
+}
+
+@media screen and (max-width:847px){
+    .main{
+        display: grid;
+    }
+
+    .p1{
+        display: flex;
+    }
+
+    .p2{
+        display: flex;
+    }
+
+    .infop1 button{
+        margin-top:30px;
+        display: block;
+    }
+
+    .clickcontact1{
+        display: none;
+    }
+
+    .infop2 button{
+        margin-top:30px;
+        display: block;
+    }
+
+    .infop1{
+        margin-left:30px;
+        padding:35px;
+    }
+
+    .infop2{
+        margin-left:30px;
+        padding:35px;
+    }
+
+    img{
+        width:300px;
+        height: auto;
+    }
+
+    .infop1{
+        margin-bottom:20px;
+    }
+
+    img{
+        margin-bottom:30px;
+    }
+
+    .popup{
+        border-radius:30px;
+    }
+}
