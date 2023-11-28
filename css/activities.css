@@ -49,6 +49,15 @@ body {
     color: red;
     font-size: small;
   }
+  /* styling for form group file */
+  .form-group input[type="file"]{
+   width: 898px;
+   height: 25px;
+   border: solid black;
+   border-radius: 5px;
+   background-color: white;
+   padding-top: 5px;
+  }
   
   /* Styling for various form input types */
   .form-group input[type="text"],
