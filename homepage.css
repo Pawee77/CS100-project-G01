@@ -242,6 +242,11 @@ body{
     display: none;
 }
 
+.clickcontact1{
+    display: none;
+}
+
+
 /*responsive*/
 
 @media screen and (max-width: 1527px){
@@ -278,9 +283,14 @@ body{
     .contactp2{
         display:none;
     }
-    .clickcontact{
+    .clickcontact1{
         display: block;
     }
+    .main{
+        width:70%;
+        margin:0 auto;
+    }
+
 }
 
 @media screen and (max-width:847px){
@@ -335,5 +345,23 @@ body{
 
     .popup{
         border-radius:30px;
+    }
+}
+
+@media screen and (max-width:652px) {
+    .p1{
+        display: grid;
+    }
+    .p2{
+        display:grid;
+    }
+}
+
+@media screen and (max-width:583px){
+    .popup{
+        top:80%;
+    }
+    .popup2-click{
+        top:180%;
     }
 }
