@@ -9,7 +9,7 @@
 /* Set the font family for the entire body */
 body {
     font-family: Arial, sans-serif;
-    background-color: darkcyan;
+    background-color: #7AB4C1;
     margin: 0;
     padding: 0;
     
@@ -28,9 +28,10 @@ body {
     text-align: center;
     margin-bottom: 20px;
     margin-left: 0px;
-    text-shadow: 2px 2px 5px red;
+    text-shadow: 2px 2px 5px #2B3D41;
     text-decoration-line: underline;
     text-decoration-style: double;
+    font-family: 'Covered By Your Grace', cursive;
   }
   
   /* Styling for each form group */

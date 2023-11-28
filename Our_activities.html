@@ -14,21 +14,33 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <title>Forms - CSTU Passport</title>
   <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/activities.css">
 
   <!--font google-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2? family=covered+By+Your+Grace&display=swap">
-  <link rel="stylesheet" href="Css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Noto+Sans+Thai&family=Nova+Square&display=swap" rel="stylesheet">
+  
 </head>
 <body>
   <div class="bar">
-     <div class="logo"><b>OUR CSTU<br>Passport</b></div>
-        <div class="menu">
-        <a href="#">homepage</a>
-        <a href="our_activities.html">Our Activities</a>
-     </div>
-  </div>
+    <div class="logo"><b>OUR CSTU<br>Passport</b></div>
+    <div class="menu">
+        <a href="index.html">homepage</a>
+        <a href="#">Our Activities</a>
+    </div>
+    <div class="menuicon" onclick="menuiconforclick(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+</div>
+<div class="menupopup" id="menupop">
+    <ul>
+        <a href="index.html"><li>homepage</li></a>
+        <a href="#"><li>Our Activities</li></a>
+    </ul>
+</div>
   <!-- Form Container -->
   <div class="form-container">
     <h1>Our Activities</h1>
@@ -144,7 +156,7 @@
     </form>
   </div>
   <script src="javascript/menu.js"></script>
-  <!-- JavaScript -->
+  <!-- JavaScript form -->
   <script src="script.js"></script>
 </body>
 </html>

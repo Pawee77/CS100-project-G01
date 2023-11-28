@@ -1,6 +1,5 @@
 let popup = document.getElementById("popup");
 let popup2 = document.getElementById("popup2");
-let menu = document.getElementById("menupop");
 
 function openpopup(){
     popup.classList.add("open-popup");
@@ -19,7 +18,3 @@ function closepopup2(){
     popup2.classList.remove("open-popup");
 }
 
-function menuiconforclick(x) {
-    x.classList.toggle("change");
-    menupop.classList.toggle("open-menu");
-  }
