@@ -46,6 +46,7 @@
     left:50%;
     transform: scale(0.1);
     transition: transform 0.4s;
+    z-index: 10;
 }
 
 .menupopup li{

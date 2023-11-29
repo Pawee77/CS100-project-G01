@@ -56,12 +56,44 @@ const config = {
     }
     return true;
   }
+
+  //Function to validate phone number
+  function validatePhoneNumber(){
+    const PhoneInput = document.getElementById("Phonenumber");
+    const PhonePattern = /^\d{10}$/;
+    const errorElement = document.getElementById("PhonenumberError");
+
+    if (!PhonePattern.test(PhoneInput.value)) {
+      errorElement.textContent = "Please enter your 10-digit Phone Number";
+      return false;
+    } else {
+      errorElement.textContent = ""; // Clear the error message when valid
+    }
+    return true;
+  }
+
+  //FUnction to validate activities image
+  function validateImage(){
+    const ImageInput = document.getElementById("Image");
+    const fileName = ImageInput.value;
+    const ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+
+    if(ext =="jpg" || ext =="JPG" || ext=="gif" || ext=="GIF" || ext=="PDF" || ext=="pdf") {
+      errorElement.textContent = "";
+      return true;
+    } else {
+      errorElement.textContent = "Please upload jpg , gif , pdf only";
+      return false;
+    }
+  }
   
   // Function to validate form inputs on user input
   function validateFormOnInput() {
     validateName();
     validateStudentID();
     validateEmail();
+    validatePhoneNumber();
+    validateImage();
   }
   
   // Function to fetch activity types from the backend
@@ -105,7 +137,7 @@ const config = {
     event.preventDefault();
   
     // Validate form inputs before submission
-    if (!validateName() || !validateStudentID() || !validateEmail()) {
+    if (!validateName() || !validateStudentID() || !validateEmail() || !validatePhoneNumber() || validateImage()) {
       return;
     }
   
@@ -127,6 +159,7 @@ const config = {
       student_id: parseInt(formData.get("studentID")),
       email: formData.get("email"),
       title: formData.get("workTitle"),
+      phone: parseInt(formData.get("Phonenumber")),
       type_of_work_id: parseInt(formData.get("activityType")),
       academic_year: parseInt(formData.get("academicYear")) - 543,
       semester: parseInt(formData.get("semester")),
@@ -137,7 +170,7 @@ const config = {
     };
   
     console.log(data);
-  
+    
     try {
       // Send data to the backend using POST request
       const response = await fetch(`http://${window.location.hostname}:${port}/record`, {
@@ -181,3 +214,5 @@ const config = {
     .getElementById("studentID")
     .addEventListener("input", validateStudentID);
   document.getElementById("email").addEventListener("input", validateEmail);
+  document.getElementById("Phonenumber").addEventListener("input",validatePhoneNumber);
+  document.getElementById("Img").addEventListener("input",validateImage)
