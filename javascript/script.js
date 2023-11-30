@@ -128,7 +128,7 @@ async function submitForm(event){
     for (const [name, value] of formData) {
         console.log(name, value);
       }
-
+      
       const fullnameInput = document.getElementById("fullname");
       const studentIDInput = document.getElementById("studentID");
       const emailInput = document.getElementById("email");
@@ -186,7 +186,7 @@ async function submitForm(event){
 
       var piccss = document.getElementById("picture");
       piccss.classList.add("piccs");
-      document.getElementById("myForm").reset();
+      
       
       alert(Contentforalert);
 
@@ -201,9 +201,10 @@ async function submitForm(event){
         });
     
         if (response.ok) {
+          
           const responseData = await response.json();
           console.log("Form data submitted successfully!");
-    
+          document.getElementById("myForm").reset();
           
         } else {
           console.error("Failed to submit form data.");
